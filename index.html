@@ -14,6 +14,25 @@
       padding: 0;
     }
 
+    /* BIO STYLES */
+    .bio-wrapper {
+
+    }
+    .bio-box {
+      border: 1px solid #000;
+      font-size: 1em;
+      width: 50%;
+    }
+    .bio-box h3 {
+      font-size: 1.5em;
+    }
+    .bio-copy {
+      font-size: 1em;
+    }
+    .bio-copy a {
+      color: #080;
+    }
+
     /* HERO STYLES */
     .full-hero {
       background-color: #c7dbfc;
@@ -32,25 +51,27 @@
       width: 36px;
     }
 
-    /* BIO STYLES */
-    .bio-wrapper {
-ˇ
+    /* TEST CLASSES */
+    .test_area   {
+      color: red;
+      border: 5px solid red;
     }
-    .bio-box {
-      border: 1px solid #000;
-      font-size: 1em;
-      width: 50%;
+    .test-box {
+      background: #9db6dd;
+/*      display: inline-block;*/
+      margin: 50px;
+      width: 200px;
     }
-    .bio-box h3 {
-      font-size: 1.5em;
+    .test-box-nosizing {
+      border: 10px solid #000;
+      padding: 40px;
     }
-    .bio-copy {
-      font-size: 1em;
+    .test-box-sizing {
+      box-sizing: border-box;
+      display: block;
+      margin-top: 100px;
+      width: auto;
     }
-    .bio-copy a {
-      color: #080;
-    }
-
 
   </style>
 </head>
@@ -119,5 +140,18 @@
         </p>
     </div>
   </div>
+
+  <h2 class="test_area">Begin of test area</h2>
+  <h2>I'm an h2</h2>
+    <div class="test-box">
+      200px wide
+    </div>
+    <div class="test-box test-box-nosizing">
+      200px wide + border + padding = 300px
+    </div>
+    <div class="test-box test-box-nosizing test-box-sizing">
+      200px wide + border + box-sizing: border-box = 200px
+    </div>
+  <h2 class="test_area">End of test area</h2>
 </body>
 </html>
